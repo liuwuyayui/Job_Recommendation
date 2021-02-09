@@ -1,5 +1,11 @@
-/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/ExampleJob.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/db/MySQLDBUtil.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/Extraction.java
 /Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/jupiter/HelloServlet.java
-/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/ExampleCoordinates.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/Item.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/db/MySQLTableCreation.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/external/GitHubClient.java
 /Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/servlet/RecommendationServlet.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/external/MonkeyLearnClient.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/ExtractResponseItem.java
+/Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/entity/ExtractRequestBody.java
 /Users/daddy/IdeaProjects/jupiter/src/main/java/com/laioffer/job/servlet/SearchServlet.java
