@@ -2,7 +2,7 @@ package com.laioffer.job.external;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.laioffer.job.config.Property;
+import com.laioffer.job.config.PropertyReader;
 import com.laioffer.job.entity.ExtractRequestBody;
 import com.laioffer.job.entity.ExtractResponseItem;
 import com.laioffer.job.entity.Extraction;
@@ -22,10 +22,10 @@ public class MonkeyLearnClient {
   public List<Set<String>> extract(List<String> articles) {
     ObjectMapper mapper = new ObjectMapper();
     CloseableHttpClient httpClient = HttpClients.createDefault();
-    String EXTRACT_URL = Property.getProperty("monkeyLearn", "EXTRACT_URL");
+    String EXTRACT_URL = PropertyReader.getProperty("monkeyLearn", "EXTRACT_URL");
     HttpPost request = new HttpPost(EXTRACT_URL);
     request.setHeader("Content-type", "application/json");
-    String AUTH_TOKEN = Property.getProperty("monkeyLearn", "AUTH_TOKEN");
+    String AUTH_TOKEN = PropertyReader.getProperty("monkeyLearn", "AUTH_TOKEN");
     request.setHeader("Authorization", "Token " + AUTH_TOKEN);
     ExtractRequestBody body = new ExtractRequestBody(articles, 3);
     

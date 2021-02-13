@@ -10,7 +10,7 @@ public class MySQLTableCreation {
     try {
       
       // Step 1 Connect to MySQL.
-      System.out.println("Connecting to " + MySQLDBUtil.url());
+//      System.out.println("Connecting to " + MySQLDBUtil.url());
       Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
       Connection conn = DriverManager.getConnection(MySQLDBUtil.url());
       
