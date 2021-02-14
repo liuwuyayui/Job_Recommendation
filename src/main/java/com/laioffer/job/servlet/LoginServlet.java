@@ -14,6 +14,10 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+  }
+  
+  @Override
+  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     ObjectMapper mapper = new ObjectMapper();
     LoginRequestBody body = mapper.readValue(request.getReader(), LoginRequestBody.class);
     MySQLConnection connection = new MySQLConnection();
@@ -29,11 +33,5 @@ public class LoginServlet extends HttpServlet {
     connection.close();
     response.setContentType("application/json");
     mapper.writeValue(response.getWriter(), loginResponseBody);
-  
-  }
-  
-  @Override
-  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-  
   }
 }
