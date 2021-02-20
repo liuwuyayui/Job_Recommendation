@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Item Recommendation">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
 <header class="top-header">
     <nav class="top-nav">
@@ -47,9 +45,9 @@
             <input id="register-username" name="username" type="text">
             <label for="password">Password: *</label>
             <input id="register-password" name="password" type="password">
-            <label for="first-name">First Name: *</label>
+            <label for="register-first-name">First Name: *</label>
             <input id="register-first-name" name="first-name" type="text">
-            <label for="last-name">Last Name: *</label>
+            <label for="register-last-name">Last Name: *</label>
             <input id="register-last-name" name="last-name" type="text">
             <button id="login-form-btn">Back to Login</button>
             <button id="register-btn">Register</button>
@@ -73,27 +71,9 @@
             </nav>
         </aside>
 
-        <ul id="item-list">
-            <li class="item">
-                <img alt="item image" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg"/>
-                <div>
-                    <a class="item-name" href="#">Item</a>
-                    <p class="item-category">Vegetarian</p>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
-                <div class="fav-link">
-                    <i class="fa fa-heart"></i>
-                </div>
-            </li>
-        </ul>
+        <ul id="item-list"></ul>
     </section>
 </div>
-
 <footer>
     <p class="title">What We Do</p>
     <p>"Help you find the best place around."</p>
@@ -117,7 +97,8 @@
     <li id="{{id}}" class="item">
         <img src="{{company_logo}}">
         <div>
-            <a class="item-name" href="{{url}}" target="_blank">
+            <a class="item-name" href="{{url}}"
+               target="_blank">
                 {{title}}
             </a>
             <p class="item-keyword">Keyword: {{keywords}}
@@ -135,5 +116,11 @@
 <script src="scripts/main.js"></script>
 
 </body>
-
 </html>
+
+
+
+
+
+
+
